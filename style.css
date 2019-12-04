@@ -1,0 +1,334 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:Monospace;
+	background: rgba(216, 243, 254,0.5);
+	background-attachment: fixed;
+}
+
+.navbar-brand{
+
+	font-size: 40px;
+	text-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+.nav-item{
+	padding: 0em 1em;
+	font-size: 20px;
+}
+
+.navbar-nav{
+	/*padding-left: 10em;*/
+	/*background-color: red;*/
+}
+
+.navbar{
+	padding: 0 15em;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+
+	transition: all 0.5s;
+	
+
+
+}
+.navbar-collapse{
+	/*float: right;*/
+	/*background-color: black; */
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+
+.top{
+	/*margin: 10em 0;*/
+	height: 100vh;
+}
+.bg-info{
+	background-color:transparent!important;
+	/*padding-left: 50px;*/
+}
+
+.intro-info{
+	margin-top: 200px;
+}
+
+.top-img{
+	height: 400px;
+	width: auto;
+	/*padding-left: 100px;*/
+
+}
+
+.about-loading,.service-loading{
+	opacity: 0;
+	transition: all 1s;
+
+}
+
+.about,.service{
+	opacity: 1;
+	height: 100vh;
+	background-color: white;
+	padding-top:100px; 
+}
+
+.service{
+	background-color: transparent;
+}
+
+.scrolled {
+  /*padding: 0 15em;*/
+  padding-top:2px !important; 
+  background-color:#6c63ff;
+  position: fixed;
+  /*border-bottom-right-radius: 10px;*/
+  /*border-bottom-left-radius: 10px;*/
+  width:100%;
+  top:0;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  z-index: 999;
+  /*transition: background-color 200ms ease-in;*/
+}
+.navbar-brand2{
+	color:white !important;
+	font-size: 40px;
+	text-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+.aboutinner,.serviceinner{
+	margin-top: 5em;
+}
+
+.about-img,.service-img{
+	height:300px;
+	border-radius: 150px;
+}
+
+.about-content{
+	font-size: 20px;
+}
+
+
+
+.card{
+	height: 15rem;
+	border-radius: 10px;
+}
+
+.servicecol{
+	padding: 0px 50px 25px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+  /*.row{
+  	display: flex;
+  	flex-wrap: wrap;
+
+  }*/
+
+  .top{
+  	height: 500px !important;
+  	padding: 80px 0 60px 0;
+  }
+
+  .about-content{
+  	font-size: 15px;
+  }
+
+  .about-img,.service-img{
+	height:250px;
+	border-radius: 125px;
+}
+
+.aboutinner,.serviceinner{
+	margin-top: 4em;
+}
+
+
+.servicecol{
+	
+	margin-right: 50px;
+}
+
+
+
+}
+
+@media screen and (max-width: 770px) {
+
+
+	.top-img{
+		height:200px;
+		width:auto;
+		
+	}
+
+	.intro-img{
+		margin-top: 25%;
+		margin-left: 25%;
+	}
+
+	.intro-info h2{
+		font-size: 25px;
+	}
+
+	.intro-info{
+		margin-left: 18%;
+		margin-top: 5%;
+		padding-bottom: 5%;
+		text-align: center;
+		width:;
+	}
+
+	.about-content{
+	  	font-size: 12px;
+	  	width: 400px;
+	  	height:250px; 
+	  	margin-top: 15px;
+	  	text-align: center;
+
+	  }
+
+    .about-img,.service-img{
+		height:250px;
+		border-radius: 125px;
+
+	}
+
+	.aboutinner,.serviceinner{
+		margin-top: 4em;
+	}
+
+	.aboutinner{
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 30px;
+		height: 500px;
+	}
+
+	.about-col-img{
+		width:300px;
+	}
+
+
+	.servicerow{
+		display: flex !important;
+		flex-direction: column;
+		width: 300px;
+	}
+	.serviceinner{
+		width: 300px;	
+	}
+
+
+	.navbar-brand,#about h1,#service h1{
+		font-size: 30px;
+	}
+
+   #navbarNavDropdown{
+   	z-index: 999!important;
+}
+ 
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+	.navbar{
+			padding: 0em 5em;
+	}
+
+
+	.navbar-brand,#about h1,#service h1{
+		font-size: 25px;
+	}
+
+	.scrolled {
+  /*padding: 0 15em;*/
+  padding-top:5px !important; 
+  background-color:#6c63ff;
+  position: fixed;
+  width:100%;
+  top:0;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  z-index: 999;
+  
+}
+
+
+
+.intro-img,.intro-info{
+	
+	padding-left: 0px!important;
+	padding-right: 0px; 
+	margin-left: 0px;
+}
+
+
+.top-img{
+	width: 100%;
+}
+ 
+
+.about-loading{
+	opacity: 1;
+	padding-top: 5%!important;
+	
+	height: auto!important;
+	background-color: white;
+	
+}
+
+.about-content{
+	padding-right: 65px;
+	padding-left: 65px;
+}
+
+.service-loading{
+	opacity: 1;
+	padding-top: 5%!important;
+}
+
+.servicecol{
+	padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
